@@ -28,7 +28,7 @@ function numOfRounds() {
 function computerPlay() {
     //Create an Array with all the options the computer can choose.
     const options = ["Rock", "Paper", "Sizzors"];
-    //Now create a RANDOM number between 0 and 2. 0 and 2 because the first index of an Array is 0. 
+    //Now create a RANDOM number between 0 and 2. 0 and 2 because the first index of an Array is 0 and this Array has 3 options.
     //We work with the index of the Array here to declare which option this function returns. 
     // ----- EXAMPLE: options[0] = "Rock" ------ //
     let index = Math.floor(Math.random() * options.length)
@@ -43,7 +43,6 @@ function playRound(playerSelection, computerSelection) {
     let computer = computerSelection.toLowerCase();
     let player = playerSelection.toLowerCase();
     //The string in the variables computer and player gets converted to all lowercase letters.
- 
         if (player === computer) return "It's a Tie!";
         if (player === 'rock') {
             if (computer === 'paper') return `The Computer Won - ${computer} beats ${player}`;
