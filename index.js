@@ -95,11 +95,9 @@ function game(){
 
     if(score_player === score_computer) alert("It's a Tie!");
     else if(score_player > score_computer) {
-        alert('You won!');
-        document.write(`You won with a Score of ${score_player}`);
+        alert(`You won! Total Rounds won: ${score_player}`);
     } else {
-        alert('You lost');
-        document.write(`The Computer won with a Score of ${score_computer}`)
+        alert(`You lost...Total Rounds won: ${score_player}`);
     }
 }
 
