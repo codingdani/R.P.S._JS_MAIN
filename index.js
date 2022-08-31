@@ -16,6 +16,7 @@ function numOfRounds() {
             //The variable rounds contains a number now. 
             //Now store the value of rounds in n.
             n = parseInt(rounds)
+            //parseInt transforms the variable into an integer/number (just to make sure it actually is a "whole" number)//
         }
     }
     //When the while loop is finished and a number is stored in n, return this number.
